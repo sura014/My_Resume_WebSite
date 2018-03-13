@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            overflow: auto;
+
+        }
+
+
+        nav {
+            background-color: rgb(28, 23, 23);
+            overflow: hidden;
+            padding: 0px 40px;
+        }
+
+        nav div {
+            color: silver;
+            background-color: rgb(28, 23, 23);
+            float: left;
+            font-size: 1.2em;
+            padding: 10px 10px;
+        }
+
+        nav div:hover {
+            color: white;
+            cursor: pointer;
+        }
+
+        h1,
+        h2 {
+            padding: 0px 45px;
+
+        }
+
+
+        .icon,
+        .icon-desciption {
+            display: inline-block;
+            padding: 5px 50px;
+        }
+
+        .icon-desciption {
+            position: relative;
+            bottom: 8px;
+
+        }
+
+        .article-list {
+            padding: 0px 45px;
+        }
+
+        .article {
+            width: 33%;
+            float: left;
+        }
+
+        table,
+        th,
+        td {
+            border: silver 1px solid;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 95%;
+            overflow: hidden;
+            margin-left:  auto;
+            margin-right: auto;
+
+        }
+
+        tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        tr:hover td {
+            background-color: lightsteelblue;
+        }
+
+        th {
+            height: 100px;
+        }
+
+        td {
+            text-transform: uppercase;
+            height: 50px;
+        }
+
+        button {
+            width: 100%;
+            margin: 2px;
+            border-color: none;
+            color: white;
+            border: 0px none black;
+            border-radius: 5px;
+            height: 40px;
+        }
+
+        button:hover {
+            filter: brightness(50%);
+        }
+
+        footer {
+            clear: both;
+            position:absolute;
+            overflow: hidden;
+            
+            width: 100%;
+            height:150px;
+            background-color: lightslategrey;
+        }
+        aside{
+            height: 100vh;
+            float: left;
+        }
+        .address{
+            display:inline-block;
+            padding-right: 10px;
+            float:right
+        }
+
+
+        @media only screen and (max-width: 580px) {
+            nav div {
+                float: none;
+                width: 100%;
+                text-align: center;
+            }
+            .article {
+                float: none;
+                width: 100%;
+            }
+            .address{
+                float: left;
+                display: block;
+                clear: both;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <aside></aside>
+
+    <nav>
+        <div>WebSiteName</div>
+        <div style="color:white;background-color:black;">Home</div>
+        <div>Page1</div>
+        <div>Page2</div>
+        <div>page3</div>
+        <div style="float:right;">Login</div>
+    </nav>
+
+
+    <h1>簡單的登錄頁</h1>
+    <h2>副標題</h2>
+    <div class="icon">
+        <i class="fab fa-algolia fa-8x" style="color:blueviolet;"></i>
+    </div>
+    <div class="icon-desciption">
+        <p>老六:沒打中?</p>
+        <p>張痲子,讓子彈飛一會兒。</p>
+        <p>
+            <i>摘自讓子彈飛</i>
+        </p>
+    </div>
+    <div class="article-list">
+        <div class="article">
+            <h3>小寫</h3>
+            <p style="text-transform: lowercase;">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good
+                and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during
+                the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", </p>
+        </div>
+        <div class="article">
+            <h3>大寫</h3>
+            <p style="text-transform: uppercase">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good
+                and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during
+                the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", </p>
+        </div>
+        <div class="article">
+            <h3>字首大寫</h3>
+            <p style="text-transform: capitalize;">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good
+                and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during
+                the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", </p>
+        </div>
+        </div>
+
+
+        <table>
+            <tr>
+                <th style="background-color:palegreen">
+                    <h3>免費方案</h3>
+                </th>
+                <th style="background-color:powderblue">
+                    <h3>標準方案</h3>
+                </th>
+                <th style="background-color:plum">
+                    <h3>豪華方案</h3>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3>$0</h3>
+                </th>
+                <th>
+                    <h3>$99</h3>
+                </th>
+                <th>
+                    <h3>$999</h3>
+                </th>
+            </tr>
+            <div class="lorem">
+                <tr>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                </tr>
+                <tr>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                </tr>
+                <tr>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                </tr>
+                <tr>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                </tr>
+                <tr>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                </tr>
+                <tr class="botton-line">
+                    <td>
+                        <button style="background-color:green">購買</button>
+                    </td>
+                    <td>
+                        <button style="background-color:blue">購買</button>
+                    </td>
+                    <td>
+                        <button style="background-color:red">購買</button>
+                    </td>
+                </tr>
+            </div>
+  
+        </table>
+        <footer>
+            <a href="#">文件資料</a>
+            <a href="#">相關授權</a>
+            <a href="#">聯絡資訊</a>
+            <br>
+            <div class="address" style="">
+                <p>某某股份有限公司</p>
+                <p>地址第一行</p>
+                <p>地址第二行</p>
+                <p>tel:(02)2134-9658</p>
+
+            </div>
+        </footer>
+
+
+</body>
+
+</html>
