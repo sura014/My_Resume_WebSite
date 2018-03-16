@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CJY Resume</title>
+    <link rel="stylesheet" href="./css/time_line.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: rgb(254, 223, 225)
+        }
+
+        nav {
+            background-color: rgba(40, 40, 40, 0.1);
+            overflow: hidden;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 2;
+            clear: both;
+
+
+        }
+
+        nav a {
+            display: inline-block;
+            background-color: transparent;
+            font-size: 1.5em;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+
+        }
+
+        nav a:hover {
+            background-color: rgb(40, 40, 40, 0.3);
+            color: silver;
+        }
+
+        /*about me*/
+
+        .about-me {
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            clear: both;
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+            background-image: url("background.jpg");
+        }
+        
+
+
+
+        .summary {
+            width: 300px;
+            height: 300px;
+            background-color: rgba(40, 40, 40, 0.4);
+            padding-top: 20px;
+            border-radius: 20px;
+            color:whitesmoke;
+            letter-spacing: 2px;
+            line-height: 50px;
+            
+        }
+
+        .summary img {
+           
+            width: 150px;
+            
+            border-radius: 50%;
+        }
+
+        /*Resume*/
+
+        /*Time Line*/
+
+        .timeline {
+            float: left;
+        }
+
+
+        /*skill*/
+
+        .skill {
+            color: #faedd9;
+            text-align: center;
+            width: 40%;
+            float: left;
+            overflow: hidden;
+            background-color: #000f28;
+            height: 700px;
+            padding-top: 60px;
+
+        }
+
+        .skill h1 {
+            line-height: 60px;
+        }
+
+        .skill div {
+            display: inline-block;
+
+            font-size: 1.5em;
+            font-family: fantasy;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px 6px;
+            border: #faedd9 solid 2px;
+            letter-spacing: 5px;
+
+        }
+
+        .skill-type {
+
+            width: 85%;
+        }
+        /*profolo*/
+        .profolo{
+            clear: both;       
+            background-image: url("background_profolo.png");
+        }
+        .profolo img{
+            display: inline-block;
+            width:200px;
+        }
+        .profolo h1{
+            line-height: 150PX;
+            font-size: 2.0em
+        }
+        .my-profolo{
+            width: 800px;
+        }
+
+
+        /*Skill*/
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#about-me">ABOUT ME</a>
+        <a href="#resume-link">RESUME</a>
+        <a href="#">PROFOLIO</a>
+        <a href="#">CONTECT</a>
+    </nav>
+
+    <div class="about-me">
+        <div class="summary">
+            <img src="./Cat.jpg" alt="">
+            <h1>Software Engineer</h1>
+            <h2>Chou Jui-Yu</h2>
+        </div>
+    </div>
+
+
+
+
+    <div class="timeline" id="resume-link">
+
+        <h1>2016</h1>
+        <div class="container" >
+            <br> Graduated from National Taiwan Ocean University. Completed Bachelor Degree Program of "NTOU-Department of Merchant
+            Marine".
+            <br>
+        </div>
+
+        <h1>2017</h1>
+        <div class="container" >
+            <br> Finished my compulsory service.
+
+        </div>
+
+        <h1>2018</h1>
+        <div class="container">
+            <br> Join Software Engineer Training Camp conducted by CMoney.
+        </div>
+    </div>
+
+    <div class="skill">
+        <h1>My Skill</h1>
+        <div class="skill-type">LANGUAGE</div>
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JAVASCRIPT</div>
+        <div>C#</div>
+        <div class="skill-type">FRAMEWORK</div>
+        <div>. NET</div>
+    </div>
+    <div class="profolo about-me">
+       
+        
+    <div class="my-profolo">
+            <h1>My profolo</h1>
+        <img src="./Cat.jpg" alt="">
+        <img src="./Cat.jpg" alt="">
+        <img src="./Cat.jpg" alt="">
+        <img src="./Cat.jpg" alt="">
+        <img src="./Cat.jpg" alt="">
+        <img src="./Cat.jpg" alt="">
+      </div>
+    </div>
+
+
+</body>
+
+</html>

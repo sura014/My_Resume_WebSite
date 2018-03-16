@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.timeline h1::before {
+    content: "";
+    width: 5px;
+    position: absolute;
+    background-color: white;
+    height: 5px;
+    border: tomato solid 2px;
+    left: -19px;
+    top: 15px;
+}
+
+.timeline {
+    position: relative;
+    overflow: hidden;
+    background: teal;
+    color:wheat;
+    width:60%;
+    height: 700px;
+    padding-top: 120px;
+}
+
+.timeline h1 {
+    position: relative;
+    
+    left: 50px;
+}
+.container{
+    width: 90%;
+    height: 140px;
+    position: relative;
+    left:35px;
+    top:-10px;           
+    letter-spacing: 1px;
+    padding-left:50px;
+    font-size: 1.5em;
+    line-height: 30px;
+    overflow:auto;
+}
+.timeline::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 34px;
+    width: 3px;
+    height: 120%;
+    background: #c0392b;
+
+}
