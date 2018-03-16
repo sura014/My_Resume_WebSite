@@ -15,6 +15,7 @@
         body {
             margin: 0;
             background-color: rgb(254, 223, 225)
+            
         }
 
         nav {
@@ -26,6 +27,7 @@
             width: 100%;
             z-index: 2;
             clear: both;
+            
 
 
         }
@@ -36,7 +38,7 @@
             font-size: 1.5em;
             color: white;
             text-decoration: none;
-            padding: 10px;
+            padding: 15px;
 
         }
 
@@ -131,18 +133,50 @@
         .profolo{
             clear: both;       
             background-image: url("background_profolo.png");
+            clear: both;
+            overflow: auto;
+            color: palegoldenrod;
         }
         .profolo img{
             display: inline-block;
             width:200px;
+            margin: 20px;
+        }
+        .profolo img:hover{
+           filter: opacity(0.5);
         }
         .profolo h1{
-            line-height: 150PX;
+            line-height: 80PX;
             font-size: 2.0em
         }
         .my-profolo{
             width: 800px;
         }
+        /*about me*/
+        .contact{
+            background-image: url("vintage_clay_tile_6.jpg");
+        }
+        /*responsive*/
+        @media only screen and (max-width: 600px) {
+            nav{
+                position: relative;
+                background: slategrey;               
+
+            }
+            nav a{
+                width: 100%;
+            }
+            .skill,.timeline{
+                width: 100%;
+            }
+            .profolo img{
+                margin:5px;
+            }
+            .profolo{
+                height: 120vh;
+            }
+
+}
 
 
         /*Skill*/
@@ -153,11 +187,11 @@
     <nav>
         <a href="#about-me">ABOUT ME</a>
         <a href="#resume-link">RESUME</a>
-        <a href="#">PROFOLIO</a>
+        <a href="#profolo">PROFOLIO</a>
         <a href="#">CONTECT</a>
     </nav>
 
-    <div class="about-me">
+    <div class="about-me" id="about-me">
         <div class="summary">
             <img src="./Cat.jpg" alt="">
             <h1>Software Engineer</h1>
@@ -199,18 +233,22 @@
         <div class="skill-type">FRAMEWORK</div>
         <div>. NET</div>
     </div>
-    <div class="profolo about-me">
-       
+    <div class="profolo about-me" id="profolo">      
         
     <div class="my-profolo">
-            <h1>My profolo</h1>
-        <img src="./Cat.jpg" alt="">
-        <img src="./Cat.jpg" alt="">
-        <img src="./Cat.jpg" alt="">
-        <img src="./Cat.jpg" alt="">
-        <img src="./Cat.jpg" alt="">
-        <img src="./Cat.jpg" alt="">
+            <h1>My Profolo</h1>
+            <a href="#google"><img src="./Cat.jpg" alt=""></a>
+            <a href="#google"><img src="./Cat.jpg" alt=""></a>
+            <a href="#google"><img src="./Cat.jpg" alt=""></a>
+            <a href="#google"><img src="./Cat.jpg" alt=""></a>
+            <a href="#google"><img src="./Cat.jpg" alt=""></a>
+            <a href="#google"><img src="./Cat.jpg" alt=""></a>           
+
       </div>
+    </div>
+    <div class="contact about-me">
+        
+
     </div>
 
 
